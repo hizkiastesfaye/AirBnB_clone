@@ -17,6 +17,7 @@ class BaseModel(object):
         self.updated_at = datetime.now()
 
     def to_dict(self):
+        # added comment
         new_dict = dict(self.__dict__)
         new_dict["__class__"] = type(self).__name__
         new_dict["created_at"] = self.created_at.isoformat()
