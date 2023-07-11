@@ -11,11 +11,12 @@ class BaseModel(object):
         self.updated_at = datetime.now()
 
     def __str__(self):
-        pass
+        return "[{}] ({}) {}".format(self.__class__.__name__, self.id, self.__dict__)
 
     def save(self):
-        pass
+        self.updated_at = datetime.now()
 
     def to_dict(self):
-        pass
+        new_dict = dict(self.__dict__)
+
 
