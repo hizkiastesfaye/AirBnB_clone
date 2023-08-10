@@ -8,7 +8,7 @@ class HBNBCommand(cmd.Cmd):
     Attributes:
         prompt (str): The command prompt.
     """
-    prompt = "(hbnb)"
+    prompt = '(hbnb) '
 
     # def do_emptyline(self,line):
     #     '''do nothig just pass'''
