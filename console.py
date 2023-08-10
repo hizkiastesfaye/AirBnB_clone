@@ -10,10 +10,6 @@ class HBNBCommand(cmd.Cmd):
     """
     prompt = '(hbnb) '
 
-    # def do_emptyline(self,line):
-    #     '''do nothig just pass'''
-    #     pass
-
     def emptyline(self):
         """Do nothing when an empty line is entered"""
         pass
